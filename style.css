@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    --color-blue: #0074A3;
+    --color-green: #9DD375;
+    --cilor-purple: #C5BCDF;
+    --color-yellow: #F0E52E;
+    --color-footer: #324666;
+    --color-navbar: #32466680;
+    --color-rose-red: #F05D7A;
+    --color-navy-blue: #50C8BF;
+    --color-light-blue: #1CC0F0;
+    --color-glass-effect: rgba(255, 255, 255, 0.7);
+    --color-brushed-white: rgba(255, 255, 255, 0.9);
+    --linear-dark-blue: linear-gradient(0deg, #324666 4.48%, #158CB0 26.87%);
+    --linear-blue: linear-gradient(180deg, #5FCCEC 1.35%, #D0E9F1 66.46%, #FCE8F5 100%);
+    --linear-pink: linear-gradient(30.98deg, #1AAAD6 0%, #66D1F2 9.28%, #F8DCEC 61.47%);
+    --linear-colorfull: linear-gradient(97.63deg, #C5E5AE -49.82%, #31C6F1 37.94%, #F9CDE4 129.93%);
+
+    --text-color-white: #ffff;
+    --text-color-darkness-blue: #324666;
+    --font-title: 'Montserrat', 'sans-serif';
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 5px;
+    }
+  
+    /* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+    ::-webkit-scrollbar-track {
+    background: var(--linear-dark-blue);
+    }
+  
+    /* aqui é a alça da barra, que demonstra a altura que você está na página
+    estou colocando uma cor azul clara nela e adicionando uma borda arredondada*/
+    ::-webkit-scrollbar-thumb {
+    background: var(--text-color-white);
+    border-radius: 3px;
+    }
+
+body main {
+    overflow-x: hidden;
+}
+
+.borderr {
+    border: 1px solid red;
+}
+
+.header {
+    background: url(./CCA-Assets/Imagens/bgPrincipal.jpg) no-repeat center center fixed;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    position: relative;
+    background-size: cover;
+}
+
+.shadow-darkness {
+    filter: drop-shadow(10px 10px 0px var(--color-blue));
+}
+
+.title {
+    margin: 2% 0 5% 0;
+    font-weight: bold;
+    font-size: min(22px, 7vw);
+    text-transform: uppercase;
+    font-family: var(--font-title);
+    color: var(--text-color-darkness-blue) !important;
+}
+
+h3 {
+    font-size: min(20px 8vw);
+}
+h4 {
+    font-size: min(14px 3vw);
+}
+h6 {
+    font-size: min(16px 8vw);
+}
+p {
+    margin: 0 5% 0 5%;
+    font-size: min(14px, 8vw);
+}
+
+.devider {
+    height: 35vh;
+    margin: 0 50px;
+    border-radius: 5px;
+    border: 2px solid rgb(71, 71, 71);
+}
+
+.bg-gradient-blue {
+    background: var(--linear-blue);
+    background-size: cover;
+}
+
+.bg-gradient-pink {
+    background: var(--linear-pink);
+    background-size: cover;
+}
+
+.bg-gradient-dark-blue {
+    background: var(--linear-dark-blue);
+    background-size: cover;
+}
+
+.cover {
+    width: 1920px;
+    height: 900px;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 40px;
+    color: var(--text-color-white) !important;
+}
+
+.nav-link.o:hover {
+    opacity: 0.6;
+}
+
+
+.active {
+    background: var(--linear-colorfull) !important;
+}
+
+.bg-nav {
+    background: var(--color-navbar);
+}
+
+footer {
+    background: var(--color-footer);
+}
+
+.align-text {
+    color: var(--text-color-white);
+    text-align: center;
+}
+
+.titlePop {
+    font-size: min(16px, 4vw);
+    font-weight: 700;
+    line-height: 37px;
+    font-style: normal;
+    border-radius: 5px;
+    font-family: var(--font-title);
+    color: var(--text-color-white);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.bg-pop-blue {
+    background: var(--color-blue);
+}
+
+.bg-pop-rose-red {
+    background: var(--color-rose-red);
+}
+
+.bg-pop-yellow {
+    background: var(--color-yellow);
+}
+
+.glass {
+    height: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+    background: var(--color-glass-effect);
+    border: 1px solid var(--text-color-white);
+}
+
+.glass.brushed-white {
+    background: var(--color-brushed-white);
+}
+
+.mb-50 {
+    margin-bottom: 150px;
+}
+
+.waveDetails {
+    height: 50%;
+}
+
+.ppc {
+    padding: 5% 0 5% 0;
+}
+
+.galery-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 1vw;
+}
+
+#instafeed img{
+    width: 100%;
+    height: 90%;
+}
+#instafeed img {
+    transition: ease 0.2s;
+    filter: grayscale(25%);
+    z-index: 1;
+}
+
+#instafeed img:hover {
+    transform: scale(110%);
+    filter: grayscale(0%);
+    z-index: 5;
+    cursor: pointer;
+}
+
+.ondinha {
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+.rotate-180 {
+    transform: rotate(90deg);
+}
+
+#social-link a:hover {
+    filter: drop-shadow(0px 0px 3px #0074aa);
+    transform: scale(90%);
+}
+.py-50 {
+    padding: 0 0 10rem 0;
+}
+
+.form-control:disabled:read-only {
+    background: var(--font-title);
+    border-radius: 10px;
+    height: 50px;
+    font-size: large;
+    font-weight: lighter;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.reveal.reveal-active {
+    position: relative;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.copy {
+    display: flex;
+    text-transform: capitalize;
+    align-items: center !important;
+    justify-content: center !important;
+    word-spacing: 2px;
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+
+.copy span a {
+    cursor: pointer;
+    text-decoration: none;
+    opacity: .6;
+    color: var(--text-color-white);
+}
+.copy span a:hover {
+    opacity: 1;
+}
+
+#slides img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    margin: 0 12px;
+}
